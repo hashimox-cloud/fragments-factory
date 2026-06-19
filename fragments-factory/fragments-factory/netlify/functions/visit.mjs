@@ -1,10 +1,10 @@
 import { getStore } from "@netlify/blobs";
 
-export default async (req) => {
+export default async (req, context) => {
   try {
     const store = getStore("counter");
-    let count = 0;
 
+    let count = 0;
     try {
       const current = await store.get("visits", { type: "text" });
       count = current ? parseInt(current, 10) : 0;
@@ -14,7 +14,6 @@ export default async (req) => {
     }
 
     count += 1;
-
     await store.set("visits", String(count));
 
     return new Response(JSON.stringify({ count }), {
