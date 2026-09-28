@@ -149,8 +149,8 @@ nav {
 /* ── ALBUMS ── */
 .albums-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
 }
 
 /* Each album card is a mini world */
@@ -534,7 +534,7 @@ footer {
   nav { padding: 1rem 1.5rem; }
   .nav-links { display: none; }
   .wrap { padding: 4rem 1.5rem; }
-  .albums-grid { grid-template-columns: 1fr; }
+  .albums-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
   .singles-grid { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; }
   .about-vis { max-width: 260px; }
@@ -564,7 +564,7 @@ footer {
 
   <div class="hero-badge">
     <div class="badge-dot"></div>
-    3rd Album「Zero Gate Funk Club」Now Available
+    6th Album「Worth More」Now Available
   </div>
   <h1 class="hero-h1">
     <span class="l1">Fragments</span>
@@ -671,6 +671,96 @@ footer {
       </div>
     </div>
 
+    <!-- Strawberry Parade -->
+    <div class="album-card positpop" onclick="toggleDetail(this)">
+      <div class="alb-art">
+        <img src="https://www.tunecore.co.jp/s3pna/tcj-image-production/u558820/r1855591/itd1855591.jpg" alt="Strawberry Parade" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+      <div class="alb-info">
+        <div class="alb-genre">Pop / Synth-Pop</div>
+        <div class="alb-title-ja">ストロベリー・パレード</div>
+        <div class="alb-title-en">Strawberry Parade</div>
+        <div class="alb-meta">
+          <span class="alb-num">4th Album</span>
+          <span class="alb-year">2026.07.14</span>
+        </div>
+      </div>
+      <div class="alb-detail">
+        <div class="alb-detail-inner">
+          <p class="alb-desc">甘くポップなサウンドで彩られた4thアルバム。14曲・46分、Fragments Factoryの新たな世界観が広がる。</p>
+          <ol class="track-list">
+            <li>Strawberry Portion (Parade version)</li><li>Green light, then you go</li>
+            <li>Candy Pop</li><li>Can you feel it?</li>
+            <li>Heart-MEGANE</li><li>Why does love got be so sad</li>
+            <li>Your floor color</li><li>Dreams Kitchen Energy</li>
+            <li>All Your Campfires</li><li>Apple-pie Love</li>
+            <li>Welcome Home</li><li>Bright Morning, New Day</li>
+            <li>Bread and Cheese</li><li>Hotel Every Night</li>
+          </ol>
+          <a href="https://linkco.re/XCdGmuVy" target="_blank" class="alb-listen-btn">▶ Listen / Streaming</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- UNITE -->
+    <div class="album-card citypop" onclick="toggleDetail(this)">
+      <div class="alb-art">
+        <img src="https://www.tunecore.co.jp/s3pna/tcj-image-production/u558820/r1922817/itd1922817.jpg" alt="UNITE" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+      <div class="alb-info">
+        <div class="alb-genre">Pop / Synth-Pop</div>
+        <div class="alb-title-ja">ユナイト</div>
+        <div class="alb-title-en">UNITE</div>
+        <div class="alb-meta">
+          <span class="alb-num">5th Album</span>
+          <span class="alb-year">2026.08.24</span>
+        </div>
+      </div>
+      <div class="alb-detail">
+        <div class="alb-detail-inner">
+          <p class="alb-desc">10曲・32分。Fragments Factoryが新たな境地へと踏み出す5thアルバム。</p>
+          <ol class="track-list">
+            <li>Step Into the Night</li><li>Honey taste like a little bit</li>
+            <li>Pay it forward</li><li>Skirt steak rather than tongue</li>
+            <li>Welcome Home (Slowdown version)</li><li>Unite</li>
+            <li>YAPPARI YAMETA</li><li>Yes or No</li>
+            <li>Heart of Gold</li><li>And still go on living</li>
+          </ol>
+          <a href="https://linkco.re/r3s877GU" target="_blank" class="alb-listen-btn">▶ Listen / Streaming</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Worth More -->
+    <div class="album-card funk" onclick="toggleDetail(this)">
+      <div class="alb-art">
+        <img src="https://www.tunecore.co.jp/s3pna/tcj-image-production/u558820/r1975917/itd1975917.png" alt="Worth More" style="width:100%;height:100%;object-fit:cover;display:block;">
+        <span class="new-badge-art">NEW</span>
+      </div>
+      <div class="alb-info">
+        <div class="alb-genre">Pop / Synth-Pop</div>
+        <div class="alb-title-ja">ワース・モア</div>
+        <div class="alb-title-en">Worth More</div>
+        <div class="alb-meta">
+          <span class="alb-num">6th Album</span>
+          <span class="alb-year">2026.09.28</span>
+        </div>
+      </div>
+      <div class="alb-detail">
+        <div class="alb-detail-inner">
+          <p class="alb-desc">「価値」をテーマに、日常の出来事・記憶・偶然の瞬間を音楽に変換した10曲・41分の6thアルバム。</p>
+          <ol class="track-list">
+            <li>All The Little Things</li><li>Finger Dancing</li>
+            <li>What Remains</li><li>Prime number</li>
+            <li>Worth More</li><li>Pleasure Pleasure</li>
+            <li>Crossing Tama River</li><li>Three dimensions</li>
+            <li>Matchbook Sparks</li><li>Passing By</li>
+          </ol>
+          <a href="https://linkco.re/MBP4u8AE" target="_blank" class="alb-listen-btn">▶ Listen / Streaming</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -750,11 +840,11 @@ footer {
       <div class="sec-label">About</div>
       <div class="sec-title" style="margin-bottom:1.4rem;">Fragments Factory</div>
       <p>アルバムごとに異なる音楽世界を構築するユニット。City Pop から Soul・Funk まで、様々なジャンルをプロジェクトとして昇華させる。</p>
-      <p>2022年デビュー。シングル2枚、アルバム2枚をリリース。2025年6月9日、3rdアルバム「Zero Gate Funk Club」をリリース。</p>
+      <p>2022年デビュー。シングル2枚、アルバム6枚をリリース。</p>
       <div class="stat-row">
         <div class="stat-item"><span>2</span><span>Singles</span></div>
-        <div class="stat-item"><span>2</span><span>Albums</span></div>
-        <div class="stat-item"><span>3rd</span><span>Coming 06.09</span></div>
+        <div class="stat-item"><span>6</span><span>Albums</span></div>
+        <div class="stat-item"><span>2026</span><span>Latest Release</span></div>
       </div>
     </div>
   </div>
@@ -765,6 +855,21 @@ footer {
   <div class="sec-label">News</div>
   <div class="sec-title">Latest</div>
   <div class="news-list">
+    <div class="news-row">
+      <span class="n-date">2026.09.28</span>
+      <span class="n-tag t-release">Release</span>
+      <span class="n-title">6th Album「Worth More」リリース</span>
+    </div>
+    <div class="news-row">
+      <span class="n-date">2026.08.24</span>
+      <span class="n-tag t-release">Release</span>
+      <span class="n-title">5th Album「UNITE」リリース</span>
+    </div>
+    <div class="news-row">
+      <span class="n-date">2026.07.14</span>
+      <span class="n-tag t-release">Release</span>
+      <span class="n-title">4th Album「ストロベリー・パレード / Strawberry Parade」リリース</span>
+    </div>
     <div class="news-row">
       <span class="n-date">2026.06.09</span>
       <span class="n-tag t-release">Release</span>
@@ -821,13 +926,17 @@ footer {
 
 <script>
 (async () => {
+  const el = document.getElementById('visitCounter');
   try {
     const res = await fetch('/api/visit');
     const data = await res.json();
-    const el = document.getElementById('visitCounter');
-    el.textContent = String(data.count).padStart(6, '0');
+    if (data && typeof data.count === 'number') {
+      el.textContent = String(data.count).padStart(6, '0');
+    } else {
+      el.textContent = '000000';
+    }
   } catch (e) {
-    document.getElementById('visitCounter').textContent = '------';
+    el.textContent = '000000';
   }
 })();
 </script>
